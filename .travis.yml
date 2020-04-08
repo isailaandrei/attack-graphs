@@ -1,0 +1,18 @@
+language:
+  cpp
+compiler:
+  - gcc
+python:
+  - 3.5
+install:
+  - sudo apt-get install libboost-all-dev
+  - sudo apt-get install python3-pip
+  - sudo pip3 install coveralls
+  - sudo apt-get install libpcap-dev
+  - sudo pip3 install --upgrade requests
+script:
+  - make test
+  - cd database && python3 load.py -r && cd ..
+  - coverage3 run --source=. setup.py test
+after_success:
+  - coveralls

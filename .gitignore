@@ -1,0 +1,54 @@
+build/
+build_topology
+dist/
+package-lock.json
+
+node_modules
+
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+
+# Python
+*.pyc
+attack_graphs.egg-info
+__pycache__
+.coverage
+*.eggs
+
+nvdcve-1.0-*.json
+*.idx
+
+*Catch.hpp*
+
+# Mulval
+*.P
